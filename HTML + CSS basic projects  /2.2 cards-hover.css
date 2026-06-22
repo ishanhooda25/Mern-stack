@@ -22,10 +22,11 @@ html,body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
 }
 
 #card1{
-    z-index: 4
+    z-index: 4;
 }
 
 #card2{
@@ -49,14 +50,27 @@ img{
     border-radius: 10%;
 }
 
+#card1:hover{
+    z-index: 5;
+    transform: translate(-50%, -60%) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
 #card2:hover{
     z-index: 5;
+    transform: translate(-50%, -60%) rotate(-8deg) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
 #card3:hover{
     z-index: 5;
+    transform: translate(-50%, -60%) rotate(-16deg) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
 #card4:hover{
     z-index: 5;
+    transform: translate(-50%, -60%) rotate(-24deg) scale(1.05); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
+
