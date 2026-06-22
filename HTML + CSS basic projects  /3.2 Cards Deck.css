@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+.cards{
+    width: 160px;
+    aspect-ratio: 5/7;
+    border: none;
+    border-radius: 7%;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    transform-origin: -50% 50%;
+    transition: all 0.3s ease;
+    perspective: 500px;
+}
+
+.card-inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    border: 1.5px solid black;
+    border-radius: 7%;
+    background-color: white;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+#A-spades{
+    z-index: 13;
+    rotate: 45deg;
+}
+#two-spades{
+    z-index: 12;
+    rotate: 35deg;
+}
+#three-spades{
+    z-index: 11;
+    rotate: 25deg;
+}
+#four-spades{
+    z-index: 10;
+    rotate: 15deg;
+}
+#five-spades{
+    z-index: 9;
+    rotate: 5deg;
+}
+#six-spades{
+    z-index: 8;
+    rotate: -5deg;
+}
+#seven-spades{
+    z-index: 7;
+    rotate: -15deg;
+}
+#eight-spades{
+    z-index: 6;
+    rotate: -25deg;
+}
+#nine-spades{
+    z-index: 5;
+    rotate: -35deg;
+}
+#ten-spades{
+    z-index: 4;
+    rotate: -45deg;
+}
+#j-spades{
+    z-index: 3;
+    rotate: -55deg;
+}
+#q-spades{
+    z-index: 2;
+    rotate: -65deg;
+}
+#k-spades{
+    z-index: 1;
+    rotate: -75deg;
+}
+
+.cards:hover{
+    transform: translate(-50%, -60%);
+}
+
+.card-inner:active{
+    transform: rotateY(180deg);
+}
+
+.front,
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 7%;
+    backface-visibility: hidden;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
