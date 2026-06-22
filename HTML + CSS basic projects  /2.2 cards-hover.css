@@ -49,6 +49,14 @@ img{
     border-radius: 10%;
 }
 
+#card2:hover{
+    z-index: 5;
+}
 
+#card3:hover{
+    z-index: 5;
+}
 
-
+#card4:hover{
+    z-index: 5;
+}
