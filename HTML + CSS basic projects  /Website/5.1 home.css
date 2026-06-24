@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 70px;
+    color: #ff4500;
+
+    text-shadow:
+        1px 1px 0 #000,
+        2px 2px 0 #000,
+        3px 3px 0 #000,
+        4px 4px 10px rgba(0,0,0,0.5),
+
+        /* neon glow */
+        0 0 10px #ff4500,
+        0 0 20px #ff4500,
+        0 0 40px #ff7300;
+        text-align: center;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+button{
+    background-color: orangered;
+    color: white;
+    height: 40px;
+    width: 170px;
+    border-radius: 999px;
+    font-size: larger;
+    font-family: 'Gill Sans';
+    transition: all 0.3s ease;
+}
+
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+button:hover{
+    transform: translate(0px, -12px) scale(1.2);
+    box-shadow: 0 10px 10px rgb(255, 97, 97);
+}
+
