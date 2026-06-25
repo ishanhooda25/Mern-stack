@@ -29,7 +29,8 @@ html,body{
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
+    z-index: 2;
 }
 
 #search-button{
@@ -54,6 +55,8 @@ html,body{
 
 .navigate{
     color: white;
+    font-family: 'Gill Sans';
+    font-size: larger;
 }
 
 #fakeHeader{
@@ -61,12 +64,117 @@ html,body{
     height: 10%;
 }
 
-#page1{
-    height: 90%;
+#Planets{
+    height: 100vh;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(2, 220px);
+    align-content: start;
+    justify-content: center;
+    padding-top: 190px;
+    gap: 100px;
+    position: relative;
 }
 
-#page2{
-    height: 90%;
+#planets-heading, #galaxy-heading{
+    position: absolute;
+    font-family: 'orbitron';
+    font-size: 80px;
+    color: #dce7fe;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.planet, .galaxy{
+    width: 220px;
+    height: 270px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.planet-image{
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 1.5px solid #00E5FF;
+    transition: all 0.3s ease;
+}
+
+.planet-image:hover{
+    box-shadow: 0 0 10px #00E5FF,
+                0 0 20px #00E5FF,
+                0 0 40px rgba(0,229,255,0.5);
+    transform: translate(0px, -10px) scale(1.1);
+}
+
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+
+.planet-button{
+    background-color: #dce7fe;
+    height: 25px;
+    width: 90px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,229,255,0.6)
+}
+
+.planet-button:hover{
+    transform: translate(0px, -10px) scale(1.2);
+    box-shadow:  0 0 25px rgba(0,229,255,0.9);
+}
+
+#Galaxies{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(3, 220px);
+    align-content: start;
+    justify-content: center;
+    padding-top: 190px;
+    gap: 100px;
+    position: relative;
+}
+
+.galaxy-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 1.5px solid #00E5FF;
+    transition: all 0.3s ease;
+}
+
+.galaxy-image:hover{
+    box-shadow: 0 0 10px #00E5FF,
+                0 0 20px #00E5FF,
+                0 0 40px rgba(0,229,255,0.5);
+    transform: translate(0px, -10px) scale(1.1);
+}
+
+.galaxy-button{
+    background-color: #dce7fe;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,229,255,0.6)
+}
+
+.galaxy-button:hover{
+    transform: translate(0px, -10px) scale(1.2);
+    box-shadow:  0 0 25px rgba(0,229,255,0.9);
 }
